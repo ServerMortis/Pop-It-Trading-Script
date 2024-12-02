@@ -308,16 +308,5 @@ tabb:AddButton({
         game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
   	end    
 })
-
-tabb:AddButton({
-	Name = "Testing",
-	Callback = function()
-        local args = {
-            [1] = "NaN"
-        }
-        
-        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
-  	end    
-})
 --Завершение скрипта
 OrionLib:Init()
