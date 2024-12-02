@@ -1,0 +1,312 @@
+local ServerMortis = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = ServerMortis:MakeWindow({Name = "Pop it trading", HidePremium = false, SaveConfig = true, ConfigFolder = "Pop it test"})
+--Цветки
+local tabf = Window:MakeTab({
+	Name = "Flower",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--Секция (Name название секции)
+local secf = tabf:AddSection({
+	Name = "Flower"
+})
+--Торты
+local tabc = Window:MakeTab({
+	Name = "Cake",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--Секция (Name название секции)
+local secc = tabc:AddSection({
+	Name = "Cake"
+})
+--Коробки
+local tabb = Window:MakeTab({
+	Name = "Box Toy",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--Секция (Name название секции)
+local secb = tabb:AddSection({
+	Name = "Box Toy"
+})
+
+-- Жёлтый цветок
+tabf:AddButton({
+	Name = "Buy Yellow Flower",
+	Callback = function()
+        local args = {
+            [1] = "Flower Yellow"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Зелёный цветок
+tabf:AddButton({
+	Name = "Buy Green Flower",
+	Callback = function()
+        local args = {
+            [1] = "Flower Green"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Голубой цветок
+tabf:AddButton({
+	Name = "Buy Cyan Flower",
+	Callback = function()
+        local args = {
+            [1] = "Flower Cyan"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Синий цветок
+tabf:AddButton({
+	Name = "Buy Blue Flower",
+	Callback = function()
+        local args = {
+            [1] = "Flower Blue"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Фиолетовый цветок
+tabf:AddButton({
+	Name = "Buy Purple Flower",
+	Callback = function()
+        local args = {
+            [1] = "Flower Purple"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Розовый цветок
+tabf:AddButton({
+	Name = "Buy Pink Flower",
+	Callback = function()
+        local args = {
+            [1] = "Flower Pink"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Оранжевый цветок
+tabf:AddButton({
+	Name = "Buy Orange Flower",
+	Callback = function()
+        local args = {
+            [1] = "Flower Orange"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Красный цветок
+tabf:AddButton({
+	Name = "Buy Red Flower",
+	Callback = function()
+        local args = {
+            [1] = "Flower Red"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Белый цветок
+tabf:AddButton({
+	Name = "Buy White Flower",
+	Callback = function()
+        local args = {
+            [1] = "Flower White"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Чёрный цветок
+tabf:AddButton({
+	Name = "Buy Black Flower",
+	Callback = function()
+        local args = {
+            [1] = "Flower Black"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Радужный цветок
+tabf:AddButton({
+	Name = "Buy Rainbow Flower",
+	Callback = function()
+        local args = {
+            [1] = "Flower Rainbow"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Торты
+--Cake?
+tabc:AddButton({
+	Name = "Buy Cake?",
+	Callback = function()
+        local args = {
+            [1] = "Cake?"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Bundt Cake
+tabc:AddButton({
+	Name = "Buy Bundt Cake",
+	Callback = function()
+        local args = {
+            [1] = "Bundt Cake"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Gold Strawberry Cake
+tabc:AddButton({
+	Name = "Buy Gold Strawberry Cake",
+	Callback = function()
+        local args = {
+            [1] = "Gold Strawberry Cake"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Strawberry Cake
+tabc:AddButton({
+	Name = "Buy Strawberry Cake",
+	Callback = function()
+        local args = {
+            [1] = "Strawberry Cake"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Rainbow Strawberry Cake
+tabc:AddButton({
+	Name = "Buy Rainbow Strawberry Cake",
+	Callback = function()
+        local args = {
+            [1] = "Rainbow Strawberry Cake"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Box
+tabb:AddButton({
+	Name = "Buy Box Toy Air",
+	Callback = function()
+        local args = {
+            [1] = "Box Toy Air"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+
+tabb:AddButton({
+	Name = "Buy Box Toy Egg",
+	Callback = function()
+        local args = {
+            [1] = "Box Toy Egg"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+
+tabb:AddButton({
+	Name = "Buy Box Toy Box Toy",
+	Callback = function()
+        local args = {
+            [1] = "Box Toy Box Toy"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+
+tabb:AddButton({
+	Name = "Buy Box Toy Noob",
+	Callback = function()
+        local args = {
+            [1] = "Box Toy Noob"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+
+tabb:AddButton({
+	Name = "Buy Box Toy House",
+	Callback = function()
+        local args = {
+            [1] = "Box Toy House"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+
+tabb:AddButton({
+	Name = "Buy Box Toy Sanic",
+	Callback = function()
+        local args = {
+            [1] = "Box Toy Sanic"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+
+tabb:AddButton({
+	Name = "Buy Box Toy SandMan",
+	Callback = function()
+        local args = {
+            [1] = "Box Toy SandMan"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+
+tabb:AddButton({
+	Name = "Buy Box Toy Lem",
+	Callback = function()
+        local args = {
+            [1] = "Box Toy Lem"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+
+tabb:AddButton({
+	Name = "Buy Box Toy Harambe",
+	Callback = function()
+        local args = {
+            [1] = "Box Toy Harambe"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+  	end    
+})
+--Завершение скрипта
+OrionLib:Init()
